@@ -1,8 +1,8 @@
 try{
-    Import-Module WingetTools
+    Import-Module Microsoft.WinGet.Client
 } catch {
-    Install-Module WingetTools
-    Import-Module WingetTools 
+    Install-Module Microsoft.WinGet.Client
+    Import-Module Microsoft.WinGet.Client 
 }
 
 $currentlyInstalledStremio = Get-WinGetPackage Stremio.Stremio
